@@ -20,7 +20,7 @@
         const minutes=localTime.getMinutes()
         const seconds=localTime.getSeconds()
 
-        output.innerHTML=`${hours}:${minutes}:${seconds} ${seconds>12?'PM':'AM'}`
+        output.innerHTML=`${hours}:${minutes}:${seconds} ${hours>=12?'PM':'AM'}`
 
         setTimeout(() => {
             getDataTime()
